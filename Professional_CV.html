@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV - John Doe</title>
+    <style>
+        @page {
+            margin: 0.75in;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #003366;
+            font-size: 32px;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            color: #666;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+        
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            color: #0066cc;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 13px;
+            color: #003366;
+            margin-bottom: 5px;
+        }
+        
+        .company-info {
+            font-style: italic;
+            color: #666;
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+        
+        .date {
+            color: #888;
+            font-size: 11px;
+        }
+        
+        .description {
+            margin-bottom: 10px;
+            font-size: 11px;
+        }
+        
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+        
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 20px;
+        }
+        
+        .summary {
+            font-size: 11px;
+            line-height: 1.7;
+            text-align: justify;
+            color: #444;
+        }
+        
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .skills-list li {
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .skills-list li:before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>JOHN DOE</h1>
+        <div class="contact-info">
+            <span>📧 john.doe@email.com</span> | 
+            <span>📱 +1 (555) 123-4567</span> | 
+            <span>🔗 <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></span> | 
+            <span>📍 New York, NY</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary">
+            Results-driven professional with 5+ years of experience in software development and project management. 
+            Proven track record of delivering high-quality solutions and leading cross-functional teams. 
+            Strong expertise in full-stack development, agile methodologies, and client relationship management. 
+            Passionate about creating scalable, efficient solutions that drive business value and enhance user experience.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Work Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-title">Senior Software Engineer</div>
+            <div class="company-info">
+                <span>Tech Company Inc.</span> | <span class="date">January 2021 - Present</span>
+            </div>
+            <ul>
+                <li>Led development of microservices architecture serving 1M+ daily active users, improving system scalability and reliability</li>
+                <li>Mentored team of 5 junior developers and conducted comprehensive code reviews, fostering best practices and knowledge sharing</li>
+                <li>Improved application performance by 40% through optimization initiatives including caching strategies and database query optimization</li>
+                <li>Collaborated with product team to define technical requirements and roadmap, ensuring alignment between business goals and technical implementation</li>
+                <li>Implemented automated testing framework increasing code coverage from 60% to 90%</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Software Engineer</div>
+            <div class="company-info">
+                <span>Digital Solutions LLC</span> | <span class="date">June 2019 - December 2020</span>
+            </div>
+            <ul>
+                <li>Developed and maintained full-stack web applications using React and Node.js, serving 50K+ monthly active users</li>
+                <li>Implemented CI/CD pipelines using Jenkins and Docker, reducing deployment time by 60% and minimizing production errors</li>
+                <li>Participated in agile ceremonies including sprint planning, daily standups, and retrospectives</li>
+                <li>Created comprehensive technical documentation and API specifications using Swagger/OpenAPI</li>
+                <li>Collaborated with UX designers to implement responsive, accessible user interfaces</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Junior Developer</div>
+            <div class="company-info">
+                <span>StartUp Ventures</span> | <span class="date">January 2018 - May 2019</span>
+            </div>
+            <ul>
+                <li>Built responsive web interfaces using modern JavaScript frameworks (React, Vue.js) and CSS preprocessors</li>
+                <li>Collaborated with designers to implement pixel-perfect UI components following design systems and style guides</li>
+                <li>Fixed bugs and implemented feature requests based on user feedback, improving customer satisfaction scores by 25%</li>
+                <li>Participated in daily standups and team retrospectives, contributing to continuous process improvement</li>
+                <li>Wrote unit tests and integration tests to ensure code quality and reliability</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        
+        <div class="education-item">
+            <div class="job-title">Bachelor of Science in Computer Science</div>
+            <div class="company-info">
+                <span>University of Technology</span> | <span class="date">2014 - 2018</span>
+            </div>
+            <div class="description">
+                <strong>GPA:</strong> 3.8/4.0 | <strong>Dean's List:</strong> All Semesters<br>
+                <strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Systems, Web Development, 
+                Software Engineering, Operating Systems, Computer Networks, Artificial Intelligence
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <ul class="skills-list">
+            <li><strong>Programming Languages:</strong> JavaScript, Python, Java, TypeScript, SQL, HTML5, CSS3</li>
+            <li><strong>Frontend Technologies:</strong> React, Vue.js, Redux, Tailwind CSS, Bootstrap, Webpack, Vite</li>
+            <li><strong>Backend Technologies:</strong> Node.js, Express, Django, FastAPI, RESTful APIs, GraphQL</li>
+            <li><strong>Databases:</strong> PostgreSQL, MongoDB, MySQL, Redis, Elasticsearch</li>
+            <li><strong>DevOps & Tools:</strong> Git, Docker, Kubernetes, AWS (EC2, S3, Lambda, RDS), CI/CD, Jenkins</li>
+            <li><strong>Methodologies:</strong> Agile/Scrum, Test-Driven Development (TDD), Microservices Architecture</li>
+            <li><strong>Other:</strong> Unit Testing (Jest, Pytest), System Design, API Design, Performance Optimization</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="skills-list">
+            <li><strong>AWS Certified Solutions Architect - Associate</strong> | Amazon Web Services | 2023</li>
+            <li><strong>Professional Scrum Master I (PSM I)</strong> | Scrum.org | 2022</li>
+            <li><strong>MongoDB Certified Developer</strong> | MongoDB University | 2021</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Key Projects</div>
+        
+        <div class="project-item">
+            <div class="job-title">E-Commerce Platform</div>
+            <div class="description">
+                Built a scalable e-commerce platform handling 10K+ transactions daily with real-time inventory management
+            </div>
+            <ul>
+                <li><strong>Technologies:</strong> React, Node.js, PostgreSQL, Redis, AWS, Stripe API</li>
+                <li>Implemented payment gateway integration with multiple payment providers and fraud detection</li>
+                <li>Achieved 99.9% uptime with automated monitoring, alerting, and disaster recovery procedures</li>
+                <li>Designed and implemented RESTful APIs serving mobile and web clients</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="job-title">Real-Time Analytics Dashboard</div>
+            <div class="description">
+                Developed real-time data visualization dashboard for business intelligence and decision-making
+            </div>
+            <ul>
+                <li><strong>Technologies:</strong> Vue.js, Python, WebSockets, D3.js, Apache Kafka</li>
+                <li>Processed and visualized 1M+ data points in real-time with sub-second latency</li>
+                <li>Reduced data processing latency by 70% through optimized data pipelines and caching strategies</li>
+                <li>Created interactive charts and graphs with drill-down capabilities for detailed analysis</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <ul class="skills-list">
+            <li><strong>English:</strong> Native/Fluent</li>
+            <li><strong>Spanish:</strong> Professional Working Proficiency</li>
+        </ul>
+    </div>
+
+</body>
+</html>
